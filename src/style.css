@@ -11,9 +11,16 @@ p {
     text-align: center;
 }
 
+footer {
+   
+    display: flex; 
+    justify-content: center;
+    
+}
+
 #cifrar-home, #descifrar-home {
     background-color: #9EEAEE;
-    
+      
 }
 
 #cifrar-home:hover, #descifrar-home:hover {
