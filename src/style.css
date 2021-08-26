@@ -1,7 +1,31 @@
-button:hover {
-    background-color: #9EEAEE;
+
+h1 {
+    font-family: Cinzel;
+    font-size: 56px;
+    text-align: center;
 }
+
+p {
+    font-family: Abhaya-Libre;
+    font-size: 20px;
+    text-align: center;
+}
+
+#cifrar-home, #descifrar-home {
+    background-color: #9EEAEE;
+    
+}
+
+#cifrar-home:hover, #descifrar-home:hover {
+    background-color: #4FDADF;
+    
+}
+
 
 #cifrar-box2 {
     background-color: red;
+}
+
+.hide {
+    display: none;
 }
