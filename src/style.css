@@ -18,12 +18,12 @@ footer {
     
 }
 
-#cifrar-home, #descifrar-home {
+.cifrar-btn , .descifrar-btn {
     background-color: #9EEAEE;
       
 }
 
-#cifrar-home:hover, #descifrar-home:hover {
+.cifrar-btn:hover, .descifrar-btn:hover {
     background-color: #4FDADF;
     
 }
