@@ -1,14 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Pensadero Privado</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!!!!</h1>
-    </div>
+    <!-- HOME 1-->
+    <main id="main1">
+      <header>
+        <h1>Pensadero Privado</h1>
+      </header>
+
+      <article>
+        <p>Bienvenido a tu pensadero personal, aquí podrás escribir sin miedo a ser  juzgado
+            ¿Qué quieres hacer?</p>
+      </article>
+
+      <nav id="container-buttons">
+        <button id="cifrar-home" aria-label="Botón para ir a la página de cifrado">
+          Cifrar
+        </button>
+
+        <button id="descifrar-home" aria-label="Botón para ir a la página de descifrado">
+          Descifrar
+        </button>
+      </nav>
+      
+
+    </main>
+    
+        
+         
+
+    <!-- HOME 2-->
+    <main class="hide" id="home2">
+      <label for="clave-btn">Escribe aquí tu clave</label>
+      <h2>Clave: <input type="text" id="clave-btn"></h2>
+      
+      <article>
+        <p>La clave será necesaria para descifrar el texto, asegúrate de guardarla.</p>
+      </article>
+
+      <button id="cifrar-main" aria-label="Botón para realizar el cifrado">
+        Cifrar
+      </button>
+
+      <section>
+        <input type="text" id="cifrar-box1" placeholder="Escriba aquí su texto">
+      </section>
+
+      <section id="cifrar-box2"> 
+        Aquí saldría el output y habría que darle estilo de cajita y que se ponga al lado     
+      </section>
+      
+      <nav id="container-buttons">
+        
+        <button id="refresh-btn" aria-label="Botón para refrescar el cifrador">
+          Refrescar
+        </button>
+
+        <button id="home-btn" aria-label="Botón para ir a la página de inicio">
+          Home
+        </button>
+
+        <button id="descifrar-btn" aria-label="Botón para ir a la página de descifrado">
+          Descifrar
+        </button>
+      </nav>
+      
+    </main>
+
+    <!--HOME 3-->
+
+    <main class="hide" id="home3">
+      <label for="clave-btn">Escribe aquí tu clave</label>
+      <h2>Clave: <input type="text" id="clave-btn"></h2>
+      
+      <article>
+        <p>Revive el pensamiento usando tu clave</p>
+      </article>
+
+      <button id="cifrar-main" aria-label="Botón para descifrar el texto">
+        Descifrar
+      </button>
+
+      <section>
+        <input type="text" id="cifrar-box1" placeholder="Escriba aquí su texto">
+      </section>
+
+      <section id="cifrar-box2"> 
+        Container output 
+      </section>
+      
+      <nav id="container-buttons">
+        
+        <button id="refresh-btn" aria-label="Botón para refrescar el cifrador">
+          Refrescar
+        </button>
+
+        <button id="home-btn" aria-label="Botón para ir a la página de inicio">
+          Home
+        </button>
+
+        <button id="descifrar-btn" aria-label="Botón para ir a la página de cifrado">
+          Cifrar
+        </button>
+      </nav>
+
+    </main>
+    
+      
+    
+    
     <script src="index.js" type="module"></script>
   </body>
 </html>
