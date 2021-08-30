@@ -1,133 +1,80 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Pensadero Privado</title>
-    <link rel="stylesheet" href="style.css" />
+<html lang="es"> <!--esto define el idioma a usar-->
+<head>
+  <meta charset="UTF-8">
+  <meta description="Aquí puedes cifrar y descifrar códigos de texto, con el famoso cifrado César" 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pensadero Privado</title>
+ 
+<style>
+  @import url ('https://fonts.googleapis.com/css2? family = Cinzel: wght @ 400; 900 & family = Kaisei + HarunoUmi & display = swap'); </style>
 
-    <!--Google fonts-->
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Cinzel:wght@400;500&display=swap');
-    </style>
-    
+<!--Conexión con estilos css-->
+<link href="style.css" rel="stylesheet" type="text/css" />
+ 
+<!--Contenido del Home-->
+</head>
+<body>
+  <header>
+    <h1>Pensadero Privado</h1>
+    <h2>Bienvenido a tu pensadero personal, aquí podrás escribir sin miedo a ser  juzgado
+    </h2>
+  </header>
+  <nav>
+    <h1>¿Qué quieres hacer?</h1>
+  </nav>
 
-  </head>
-  <body>
-    <!-- HOME-->
-    <main>
-      <header>
-        <h1 id=>Pensadero Privado</h1>
-      </header>
+  <main>
+    <button class="boton-cifrar">
+  <a href="Cifrar">Cifrar un texto</a>
+    </button>
 
-      <section>
-        <p>Bienvenido a tu pensadero personal, aquí podrás escribir sin miedo a ser  juzgado
-            ¿Qué quieres hacer?</p>
-        </section>
-
-       
-    </main>
-
-    <footer>
-      <nav class="container-buttons">
-        <button class="btn" id="cifrar-link" aria-label="Botón para ir a la página de cifrado">
-          Cifrar
+    <button class="boton-descifrar">
+      <a href="Descifrar">Descifrar un texto</a>
         </button>
+</main>
 
-        <button class="btn" id="descifrar-link" aria-label="Botón para ir a la página de descifrado">
-          Descifrar
+<!--Contenido de Cifrado-->
+<main>
+<nav>
+  <h1>Pensadero Privado</h1>
+  <h2>Cifra tu texto esribiendo en el recuadro, luego inserta un número del 1 al 26 (esta será tu clave) y dale click al boton de Cifrar</h2>
+
+  <section>
+    <input type="text" placeholder="Escribe tus pensamientos">
+    <input type="text" placeholder="Escribe tu clave numerica">
+
+    <button class="boton-cifrar">
+      <a href="Cifrar">Cifrar</a>
         </button>
-      </nav>
-    </footer>
-    
-        
-         
+  </section>
+</nav>
+</main>
 
-    <!-- Cipher-->
-    <main>
-      
-      <h2>Clave: <input type="text"></h2>
-      
-      <section>
-        <p>La clave será necesaria para descifrar el texto, asegúrate de guardarla.</p>
-      </section>
 
-      <button class="btn" id="cifrar-function" aria-label="Botón para realizar el cifrado">
-        Cifrar
-      </button>
+<!--Contenido de Descifrado-->
 
-      <section>
-        <input type="text" class="cifrar-box1" placeholder="Escriba aquí su texto">
-      </section>
+<main>
+  <nav>
+    <h1>Pensadero Privado</h1>
+    <h2>Descifra tu texto esribiendo el cifrado en el recuadro, luego inserta tu clave numerica (esta será tu clave) y dale click al boton de Descifrar</h2>
+  
+    <section>
+      <input type="text" placeholder="Escribe el texto cifrado">
+      <input type="text" placeholder="Escribe la clave numerica">
+  
+      <button class="boton-cifrar">
+        <a href="Descifrar">Descifrar</a>
+          </button>
+    </section>
+  </nav>
+  </main>
 
-      <section class="cifrar-box2"> 
-        Aquí saldría el output y habría que darle estilo de cajita y que se ponga al lado     
-      </section>
-      
-    </main>
+<!--tiene que ir al final-->
 
-    <footer>
-      <nav class="container-buttons">
-        
-        <button class="btn" id="refresh-btn" aria-label="Botón para refrescar el cifrador">
-          Refrescar
-        </button>
 
-        <button class="btn" id="home-btn" aria-label="Botón para ir a la página de inicio">
-          Home
-        </button>
-
-        <button class="btn" id="descifrar-btn" aria-label="Botón para ir a la página de descifrado">
-          Descifrar
-        </button>
-
-      </nav>
-    </footer>
-
-    <!--Decipher-->
-
-    <main>
-      
-      <h2>Clave: <input type="text"></h2>
-
-      <section>
-        <p>Revive el pensamiento usando tu clave</p>
-      </section>
-
-      <button class="btn" id="descifrar-main" aria-label="Botón para descifrar el texto">
-        Descifrar
-      </button>
-
-      <section>
-        <input type="text" class="descifrar-box1" placeholder="Escriba aquí su texto">
-      </section>
-
-      <section class="descifrar-box2"> 
-        Container output 
-      </section>
-      
-    </main>
-
-    <footer class=>
-      <nav class="container-buttons">
-        
-        <button class="btn" id="refresh-btn" aria-label="Botón para refrescar el cifrador">
-          Refrescar
-        </button>
-
-        <button class="btn" id="home-btn" aria-label="Botón para ir a la página de inicio">
-          Home
-        </button>
-
-        <button class="btn" id="descifrar-btn" aria-label="Botón para ir a la página de cifrado">
-          Cifrar
-        </button>
-      </nav>
-    </footer>
-    
-      
-    
-    
-    <script src="index.js" type="module"></script>
-  </body>
+<script src="script.js"></script>
+</body>
 </html>
+

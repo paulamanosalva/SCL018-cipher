@@ -1,14 +1,18 @@
-* {
-    font-family: Abhaya Libre;
-    font-size: 20px;
+*{
+    box-sizing: border-box;
+    color: white;
+    background-color: black;
+    font-family: Cinzel, serif;
 }
 
-h1 {
-    font-family: Cinzel;
-    font-size: 2.5em;
-}
 
-button {
-    background-color: 9EEAEE;
+.boton-cifrar{
+    color:white;
+    background-color: #90CCCF;
+    border-radius: 5px;
+    border: solid 2pt white;
+    height: auto;
+    width: auto;
+    font-size: 17;
+    margin: auto;
 }
-
