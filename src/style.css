@@ -1,38 +1,14 @@
+* {
+    font-family: Abhaya Libre;
+    font-size: 20px;
+}
 
 h1 {
     font-family: Cinzel;
-    font-size: 56px;
-    text-align: center;
+    font-size: 2.5em;
 }
 
-p {
-    font-family: Abhaya-Libre;
-    font-size: 20px;
-    text-align: center;
+button {
+    background-color: 9EEAEE;
 }
 
-footer {
-   
-    display: flex; 
-    justify-content: center;
-    
-}
-
-.cifrar-btn , .descifrar-btn {
-    background-color: #9EEAEE;
-      
-}
-
-.cifrar-btn:hover, .descifrar-btn:hover {
-    background-color: #4FDADF;
-    
-}
-
-
-#cifrar-box2 {
-    background-color: red;
-}
-
-.hide {
-    display: none;
-}
