@@ -1,14 +1,65 @@
 * {
+    background-color: #000;
+    color:#9EEAEE;
     font-family: Abhaya Libre;
     font-size: 20px;
+    margin: 10px;
+}
+
+button {
+    background-color: #9EEAEE;
+    color: #28524E;
+    font-family: Berkshire Swash;
+    display: flex;
+    justify-content: center;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cifrar-function {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cifrar-box1, .cifrar-box2 {
+    width: 8em;
+    height: 8em;
+}
+
+.cifrar-box2{
+    border: #FFF;
+}
+.container-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.descifrar-box1, .descifrar-box2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 8em;
+    height: 8em;
 }
 
 h1 {
     font-family: Cinzel;
     font-size: 2.5em;
+    text-align: center;
 }
 
-button {
-    background-color: 9EEAEE;
+h2 {
+    text-align: center;
 }
 
+p {
+    text-align: center;
+}

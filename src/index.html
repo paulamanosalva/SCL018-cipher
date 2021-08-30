@@ -2,20 +2,21 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="Pensadero Privado, cifrado César.">
     <title>Pensadero Privado</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 
     <!--Google fonts-->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Cinzel:wght@400;500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
     </style>
-    
-
   </head>
   <body>
     <!-- HOME-->
     <main>
+      <h1>PUSH PRUEBA</h1>
       <header>
         <h1 id=>Pensadero Privado</h1>
       </header>
@@ -30,11 +31,11 @@
 
     <footer>
       <nav class="container-buttons">
-        <button class="btn" id="cifrar-link" aria-label="Botón para ir a la página de cifrado">
+        <button class="cifrar-link" aria-label="Botón para ir a la página de cifrado">
           Cifrar
         </button>
 
-        <button class="btn" id="descifrar-link" aria-label="Botón para ir a la página de descifrado">
+        <button class="descifrar-link" aria-label="Botón para ir a la página de descifrado">
           Descifrar
         </button>
       </nav>
@@ -52,16 +53,16 @@
         <p>La clave será necesaria para descifrar el texto, asegúrate de guardarla.</p>
       </section>
 
-      <button class="btn" id="cifrar-function" aria-label="Botón para realizar el cifrado">
+      <button class="cifrar-function" aria-label="Botón para realizar el cifrado">
         Cifrar
       </button>
 
-      <section>
-        <input type="text" class="cifrar-box1" placeholder="Escriba aquí su texto">
-      </section>
-
-      <section class="cifrar-box2"> 
-        Aquí saldría el output y habría que darle estilo de cajita y que se ponga al lado     
+      <section class="box-container">
+        <input type="text" class="cifrar-box1"  placeholder="Escriba aquí su texto">
+        
+        <div class="cifrar-box2">
+          <p>Output</p>
+        </div>
       </section>
       
     </main>
@@ -69,15 +70,15 @@
     <footer>
       <nav class="container-buttons">
         
-        <button class="btn" id="refresh-btn" aria-label="Botón para refrescar el cifrador">
+        <button class="refresh-btn" aria-label="Botón para refrescar el cifrador">
           Refrescar
         </button>
 
-        <button class="btn" id="home-btn" aria-label="Botón para ir a la página de inicio">
+        <button class="home-btn" aria-label="Botón para ir a la página de inicio">
           Home
         </button>
 
-        <button class="btn" id="descifrar-btn" aria-label="Botón para ir a la página de descifrado">
+        <button class="descifrar-btn" aria-label="Botón para ir a la página de descifrado">
           Descifrar
         </button>
 
@@ -94,16 +95,16 @@
         <p>Revive el pensamiento usando tu clave</p>
       </section>
 
-      <button class="btn" id="descifrar-main" aria-label="Botón para descifrar el texto">
+      <button class="descifrar-main" aria-label="Botón para descifrar el texto">
         Descifrar
       </button>
 
-      <section>
-        <input type="text" class="descifrar-box1" placeholder="Escriba aquí su texto">
-      </section>
-
-      <section class="descifrar-box2"> 
-        Container output 
+      <section class="box-container">
+        <input type="text" class="descifrar-box1"  placeholder="Escriba aquí su texto">
+        
+        <div class="descifrar-box2">
+          <p>Output</p>
+        </div>
       </section>
       
     </main>
@@ -111,15 +112,15 @@
     <footer class=>
       <nav class="container-buttons">
         
-        <button class="btn" id="refresh-btn" aria-label="Botón para refrescar el cifrador">
+        <button class="refresh-btn" aria-label="Botón para refrescar el cifrador">
           Refrescar
         </button>
 
-        <button class="btn" id="home-btn" aria-label="Botón para ir a la página de inicio">
+        <button class="home-btn" aria-label="Botón para ir a la página de inicio">
           Home
         </button>
 
-        <button class="btn" id="descifrar-btn" aria-label="Botón para ir a la página de cifrado">
+        <button class="descifrar-btn" aria-label="Botón para ir a la página de cifrado">
           Cifrar
         </button>
       </nav>
