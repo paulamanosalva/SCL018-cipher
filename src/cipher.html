@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Cifrado César del Pensadero Privado.">
+        <title>Cipher</title>
+        <link href="style.css" rel="stylesheet">
+        <!--Google fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Cinzel:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+    </style>
+    </head>
+    <body>
+
+      <header>
+        <nav class="nav-tab">
+          <div class="logs">
+            <h4>Log in / Sign up</h4>
+          </div>
+          <ul class="nav-links">
+            <li><a target="_blank" href="https://es.wikipedia.org/wiki/Cifrado_César">Saber más</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="decipher.html">Descifrar</a></li>
+            <li><a href="#">Nube de pensamientos</a></li>
+          </ul>
+        </nav>  
+      </header>
+        <main>
+
+            <div class="container-clave container-buttons">
+              <script src="cipher.js" type="module"></script>
+              <h2>Clave: <input type="text" class="clave-cipher"></h2>
+              <button class="cifrar-function" aria-label="Botón para realizar el cifrado">
+                Cifrar
+              </button>
+            </div>
+            
+
+        
+            
+            <section>
+              <p class="cipher-p">La clave será necesaria para descifrar el texto, asegúrate de guardarla.</p>
+            </section>
+      
+                      
+      
+            <section class="box-container">
+              <input type="text" class="cifrar-box1"  placeholder="Escriba aquí su texto">
+              
+              <div class="cifrar-box2">
+                <p>Output</p>
+              </div>
+            </section>
+            
+          </main>
+    
+          
+          <video playsinline autoplay muted loop id="video-bg">
+            <source src="video-humo.mp4" type="video/mp4">
+          </video>
+    </body>
+</html>

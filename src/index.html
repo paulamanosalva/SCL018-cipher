@@ -5,7 +5,7 @@
     <meta name="description" content="Pensadero Privado, cifrado César.">
     <title>Pensadero Privado</title>
     <link rel="stylesheet" href="style.css">
-
+ 
     <!--Google fonts-->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
@@ -14,126 +14,43 @@
     </style>
   </head>
   <body>
+
+    
     <!-- HOME-->
     <main>
+      <nav class="nav-tab">
+        <div class="logs">
+          <h4>Log in / Sign up</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a target="_blank" href="https://es.wikipedia.org/wiki/Cifrado_César">Saber más</a></li>
+          <li><a href="cipher.html">Cifrar</a></li>
+          <li><a href="decipher.html">Descifrar</a></li>
+          <li><a href="#">Nube de pensamientos</a></li>
+        </ul>
+      </nav>  
       <header>
-        <h1 id=>Pensadero Privado</h1>
+        <div class="container-titulo">
+          <h1>Pensadero Privado</h1>
+        </div>
+        
       </header>
 
-      <section>
-        <p>Bienvenido a tu pensadero personal, aquí podrás escribir sin miedo a ser  juzgado
+      <section> 
+        <p>Bienvenido a tu pensadero personal, aquí podrás escribir sin miedo a ser  juzgado, 
+          nuestra página de cifrado te permite guardar tus pensamientos encriptados en la nube y luego puedes recordarlos
+          en la página de descifrado. Recuerda siempre tener a mano la clave de tu pensamiento.
             ¿Qué quieres hacer?</p>
-        </section>
+      </section>
 
        
     </main>
 
-    <footer>
-      <nav class="container-buttons">
-        <button class="cifrar-link" aria-label="Botón para ir a la página de cifrado">
-          Cifrar
-        </button>
 
-        <button class="descifrar-link" aria-label="Botón para ir a la página de descifrado">
-          Descifrar
-        </button>
-      </nav>
-    </footer>
-    
-        
-         
-
-    <!-- Cipher-->
-    <main>
-      
-      <h2>Clave: <input type="text"></h2>
-      
-      <section>
-        <p>La clave será necesaria para descifrar el texto, asegúrate de guardarla.</p>
-      </section>
-
-      <div class="container-buttons">
-        <button class="cifrar-function" aria-label="Botón para realizar el cifrado">
-          Cifrar
-        </button>
-      </div>
-      
-
-      <section class="box-container">
-        <input type="text" class="cifrar-box1"  placeholder="Escriba aquí su texto">
-        
-        <div class="cifrar-box2">
-          <p>Output</p>
-        </div>
-      </section>
-      
-    </main>
-
-    <footer>
-      <nav class="container-buttons">
-        
-        <button class="refresh-btn" aria-label="Botón para refrescar el cifrador">
-          Refrescar
-        </button>
-
-        <button class="home-btn" aria-label="Botón para ir a la página de inicio">
-          Home
-        </button>
-
-        <button class="descifrar-btn" aria-label="Botón para ir a la página de descifrado">
-          Descifrar
-        </button>
-
-      </nav>
-    </footer>
-
-    <!--Decipher-->
-
-    <main>
-      
-      <h2>Clave: <input type="text"></h2>
-
-      <section>
-        <p>Revive el pensamiento usando tu clave</p>
-      </section>
-
-      <div class="container-buttons">
-        <button class="descifrar-main" aria-label="Botón para descifrar el texto">
-          Descifrar
-        </button>
-      </div>
-      
-
-      <section class="box-container">
-        <input type="text" class="descifrar-box1"  placeholder="Escriba aquí su texto">
-        
-        <div class="descifrar-box2">
-          <p>Output</p>
-        </div>
-      </section>
-      
-    </main>
-
-    <footer class=>
-      <nav class="container-buttons">
-        
-        <button class="refresh-btn" aria-label="Botón para refrescar el cifrador">
-          Refrescar
-        </button>
-
-        <button class="home-btn" aria-label="Botón para ir a la página de inicio">
-          Home
-        </button>
-
-        <button class="descifrar-btn" aria-label="Botón para ir a la página de cifrado">
-          Cifrar
-        </button>
-      </nav>
-    </footer>
-    
-      
-    
-    
+    <video playsinline autoplay muted loop id="video-bg">
+      <source src="video-humo.mp4" type="video/mp4">
+    </video>
+   
     <script src="index.js" type="module"></script>
   </body>
 </html>
