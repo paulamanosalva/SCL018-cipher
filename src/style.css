@@ -1,14 +1,187 @@
 * {
+    color:#9EEAEE;
     font-family: Abhaya Libre;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    font-family: Cinzel;
-    font-size: 2.5em;
+body {
+    background-color: #000;
+    background-size: 100%;
+}
+
+
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 button {
-    background-color: 9EEAEE;
+    background-color: #9EEAEE;
+    color: #28524E;
+    font-family: Berkshire Swash;
+    display: flex;
+    justify-content: center;
+    
+    font-size: 2.5em;
+
+.cifrar-function {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1em;
 }
 
+.cifrar-box1, .cifrar-box2 {
+    width: 8em;
+    height: 8em;
+}
+
+.cifrar-box2{
+    border: #FFF;
+}
+
+.descifrar-box1, .descifrar-box2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 8em;
+    height: 8em;
+}
+
+
+
+h1 {
+    font-family: Cinzel;
+    font-size: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    
+       
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    
+}
+
+
+
+.clave-cipher {
+    width: 2.5em;
+    height: 2em;
+    
+}
+
+.container-clave {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5em;
+    padding: 1em;
+    background-color: green;
+    
+}
+
+.cipher-p {
+    padding: 1em;
+    background-color: grey;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    z-index: -1;
+  }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6em;
+    
+  }
+  
+h4 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+/*saca las viñetas de la lista*/
+.nav-links li{
+    list-style: none;
+    
+}  
+
+.nav-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 40%;
+    
+    
+}
+
+
+/*saca el subrayado de los links*/
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+
+.nav-links li a {
+    padding: 1em;
+    display: block;
+
+}
+
+.nav-tab li:hover {
+    background-color: rgba(77, 102, 116, 0.411);    
+}
+
+.logs:hover{
+    background-color: rgba(77, 102, 116, 0.411);
+}
+
+.logs h4 {
+    padding: 1em;
+    display: block;
+}
+
+
+
+p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-left: 8em;
+    margin-right: 8em;
+    margin-top: 4em;
+    margin-bottom: 2em;
+    
+    
+}

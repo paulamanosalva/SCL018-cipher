@@ -1,97 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--esto define el idioma a usar-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pensadero Privado, cifrado César.">
+    <title>Pensadero Privado</title>
+    <link rel="stylesheet" href="style.css">
+ 
+    <!--Google fonts-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Cinzel:wght@400;500&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+    </style>
+  </head>
+  <body>
 
-<head>
-  <meta charset="UTF-8">
-  <meta description="Aquí puedes cifrar y descifrar códigos de texto, con el famoso cifrado César" <meta
-    http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pensadero Privado</title><!--video landing page accesibilidad-->
-
-  <style>
-    input::placeholder {
-      color: white;
-      background-color: #40B8B5;
-      margin: 4px;
-      font-size: 12px;
-    }
-  </style>
-
-  <!--Conexión con estilos css-->
-  <link href="style.css" rel="stylesheet" />
-
-  <!--Contenido del Home-->
-</head>
-
-<body>
-  <section class="video-home">
-    <div class="video-container">
-      <video src="video_humo.mp4" autoplay muted loop> </video>
-    </div>
-  </section>
-  <header>
-    <div class="titulo">
-      <h1>Pensadero Privado</h1>
-    </div>
-    <div class="Contenido">
-      <h2>Bienvenido a tu pensadero personal, aquí podrás escribir sin miedo a ser juzgado</h2>
-      <h3>¿Qué quieres hacer?</h3>
-    </div>
-  </header>
+    
+    <!-- HOME-->
     <main>
-    <button class="boton-cifrar">
-      <a href="Cifrar">Cifrar un texto</a>
-    </button>
+      <nav class="nav-tab">
+        <div class="logs">
+          <h4>Log in / Sign up</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a target="_blank" href="https://es.wikipedia.org/wiki/Cifrado_César">Saber más</a></li>
+          <li><a href="cipher.html">Cifrar</a></li>
+          <li><a href="decipher.html">Descifrar</a></li>
+          <li><a href="#">Nube de pensamientos</a></li>
+        </ul>
+      </nav>  
+      <header>
+        <div class="container-titulo">
+          <h1>Pensadero Privado</h1>
+        </div>
+        
+      </header>
 
-    <button class="boton-descifrar">
-      <a href="Descifrar">Descifrar un texto</a>
-    </button>
-  </main>
-</body>
-
-  <!--Contenido de Cifrado-->
-  <main>
-    <nav>
-      <h1>Pensadero Privado</h1>
-      <h2>Cifra tu texto esribiendo en el recuadro, luego inserta un número del 1 al 26 (esta será tu clave) y dale
-        click al boton de Cifrar</h2>
-
-      <section>
-        <input type="text" placeholder="Escribe tus pensamientos" class="placeholder">
-        <input type="text" placeholder="Escribe tu clave numerica" class="placeholder">
-
-        <button class="boton-cifrar">
-          <a href="Cifrar">Cifrar</a>
-        </button>
+      <section> 
+        <p>Bienvenido a tu pensadero personal, aquí podrás escribir sin miedo a ser  juzgado, 
+          nuestra página de cifrado te permite guardar tus pensamientos encriptados en la nube y luego puedes recordarlos
+          en la página de descifrado. Recuerda siempre tener a mano la clave de tu pensamiento.
+            ¿Qué quieres hacer?</p>
       </section>
-    </nav>
-  </main>
+
+       
+    </main>
 
 
-  <!--Contenido de Descifrado-->
-
-  <main>
-    <nav>
-      <h1>Pensadero Privado</h1>
-      <h2>Descifra tu texto esribiendo el cifrado en el recuadro, luego inserta tu clave numerica (esta será tu clave) y
-        dale click al boton de Descifrar</h2>
-
-      <section>
-        <input type="text" placeholder="Escribe el texto cifrado" class="placeholder">
-        <input type="text" placeholder="Escribe la clave numerica" class="placeholder">
-
-        <button class="boton-descifrar">
-          <a href="Descifrar">Descifrar</a>
-        </button>
-      </section>
-    </nav>
-  </main>
-
-  <!--tiene que ir al final-->
-
-
-  <script src="script.js"></script>
-</body>
-
+    <video playsinline autoplay muted loop id="video-bg">
+      <source src="video-humo.mp4" type="video/mp4">
+    </video>
+   
+    <script src="index.js" type="module"></script>
+  </body>
 </html>
