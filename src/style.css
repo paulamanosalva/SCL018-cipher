@@ -12,7 +12,7 @@ body {
 }
 h1 {
     font-family: 'Cinzel', serif;
-    font-size: 60px;
+    font-size: 4rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -51,15 +51,6 @@ button {
 }
 
 .container-contenthome{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 10;
-    position: relative;
-}
-.container-contentcifrar{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -155,7 +146,6 @@ nav {
     width: 40%;  
 }
 
-
 /*saca el subrayado de los links*/
 .nav-links a {
     text-decoration: none;
@@ -179,8 +169,6 @@ nav {
     padding: 1em;
     display: block;
 }
-
-
 
 p {
     display: flex;
