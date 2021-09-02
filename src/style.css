@@ -10,10 +10,14 @@ body {
     background-color: #000;
     background-size: 100%;
 }
-
-
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem; 
 }
-
 .box-container {
     display: flex;
     flex-direction: row;
@@ -21,16 +25,49 @@ body {
     align-items: center;
     text-align: center;
 }
-
+.inputBox input{
+    font-size: 16px;
+    color: white;
+    margin-top: 30px;
+    border-bottom: 2px solid #aceff3;
+    outline: none;
+    background: transparent;
+    width: 600px;
+    padding: 10px 0;
+    border-radius: 8px;
+ }
 button {
-    background-color: #9EEAEE;
+    background-color: #aceff3;
     color: #28524E;
-    font-family: Berkshire Swash;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    
-    font-size: 2.5em;
+    font-size: 14pt;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
 
+.container-contenthome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+.container-contentcifrar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
 .cifrar-function {
     display: flex;
     justify-content: center;
@@ -55,31 +92,9 @@ button {
     height: 8em;
 }
 
-
-
-h1 {
-    font-family: Cinzel;
-    font-size: 5rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-    
-       
-}
-
-h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    
-}
-
-
-
 .clave-cipher {
     width: 2.5em;
     height: 2em;
-    
 }
 
 .container-clave {
@@ -90,8 +105,14 @@ h2 {
     text-align: center;
     margin-top: 1.5em;
     padding: 1em;
-    background-color: green;
-    
+    background-color: green; 
+}
+.container_cifrado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .cipher-p {
@@ -114,56 +135,44 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 6em;
-    
-  }
-  
-h4 {
-    text-transform: uppercase;
-    font-size: 1.5rem;
   }
 
 /*saca las viñetas de la lista*/
 .nav-links li{
-    list-style: none;
-    
+    list-style: none;  
 }  
 
 .nav-links ul {
     display: flex;
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
 }
 
 .nav-links {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    width: 40%;
-    
-    
+    width: 40%;  
 }
 
 
 /*saca el subrayado de los links*/
 .nav-links a {
     text-decoration: none;
-    font-size: 1.5rem;
-    
+    font-size: 18px;
 }
 
 .nav-links li a {
     padding: 1em;
     display: block;
-
 }
 
 .nav-tab li:hover {
-    background-color: rgba(77, 102, 116, 0.411);    
+    background-color: rgba(52, 199, 209, 0.411);
 }
 
 .logs:hover{
-    background-color: rgba(77, 102, 116, 0.411);
+    background-color: rgba(52, 199, 209, 0.411);
 }
 
 .logs h4 {
@@ -182,6 +191,4 @@ p {
     margin-right: 8em;
     margin-top: 4em;
     margin-bottom: 2em;
-    
-    
 }
