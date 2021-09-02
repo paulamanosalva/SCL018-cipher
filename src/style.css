@@ -16,7 +16,7 @@ h1 {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-top: 5rem; 
+    margin-top: 9rem; 
 }
 .box-container {
     display: flex;
@@ -39,15 +39,28 @@ h1 {
 button {
     background-color: #aceff3;
     color: #28524E;
-    display: inline-flex;
-    justify-content: center;
-    font-size: 14pt;
+    font-size: 2rem;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     padding: 10px 30px;
     text-decoration: none;
     letter-spacing: 1px;
+}
+
+button:hover{
+    background-color: #d5f6f8;
+    transition: ease 0.3s;
+  
+    
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+   
 }
 
 .container-contenthome{
@@ -143,32 +156,37 @@ nav {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    width: 40%;  
+    width: 30%;  
+    
 }
 
 /*saca el subrayado de los links*/
 .nav-links a {
     text-decoration: none;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 .nav-links li a {
     padding: 1em;
     display: block;
+    
 }
 
 .nav-tab li:hover {
     background-color: rgba(52, 199, 209, 0.411);
+    transition: ease 0.3s;
 }
 
 .logs:hover{
     background-color: rgba(52, 199, 209, 0.411);
+    transition: ease 0.3s;
 }
 
 .logs h4 {
     padding: 1em;
     display: block;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 p {
