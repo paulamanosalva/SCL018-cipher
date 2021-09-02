@@ -1,7 +1,7 @@
 * {
     color:#9EEAEE;
     font-family: Abhaya Libre;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -12,7 +12,7 @@ body {
 }
 h1 {
     font-family: 'Cinzel', serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@ h1 {
     text-align: center;
 }
 .inputBox input{
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
     margin-top: 30px;
     border-bottom: 2px solid #aceff3;
@@ -56,8 +56,8 @@ button {
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 10;
     position: relative;
+
 }
 .cifrar-function {
     display: flex;
@@ -125,7 +125,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    min-height: 6em;
+    min-height: 8rem;
   }
 
 /*saca las viñetas de la lista*/
@@ -149,7 +149,7 @@ nav {
 /*saca el subrayado de los links*/
 .nav-links a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.75rem;
 }
 
 .nav-links li a {
@@ -168,6 +168,7 @@ nav {
 .logs h4 {
     padding: 1em;
     display: block;
+    font-size: 1.75rem;
 }
 
 p {
@@ -175,8 +176,8 @@ p {
     justify-content: center;
     text-align: center;
     font-size: 1.75rem;
-    margin-left: 8em;
-    margin-right: 8em;
-    margin-top: 4em;
-    margin-bottom: 2em;
+    max-width: 60%;
+    margin-top: 4rem;
+  
+   
 }
