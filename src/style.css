@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Cinzel:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 * {
     color:#9EEAEE;
     font-family: Abhaya Libre;
@@ -5,37 +8,20 @@
     margin: 0;
     padding: 0;
 }
-
+#detach-button-host {
+    display: none !important;
+}
 body {
     background-color: #000;
     background-size: 100%;
 }
-h1 {
-    font-family: 'Cinzel', serif;
-    font-size: 4.5rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 9rem; 
-}
 .box-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.inputBox input{
-    font-size: 1rem;
-    color: white;
-    margin-top: 30px;
-    border-bottom: 2px solid #aceff3;
-    outline: none;
-    background: transparent;
-    width: 600px;
-    padding: 10px 0;
-    border-radius: 8px;
- }
 button {
     background-color: #aceff3;
     color: #28524E;
@@ -47,119 +33,112 @@ button {
     text-decoration: none;
     letter-spacing: 1px;
 }
-
 button:hover{
     background-color: #d5f6f8;
     transition: ease 0.3s;
-  
-    
 }
-
-.home-buttons {
+#cipher-offset{
+    margin-right: 1rem;
+}
+#decipher-offset{
+    margin-right: 1rem;
+}
+.cipher-p {
+    text-align: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 4rem;
-   
+    justify-content: center;
 }
-
-.container-contenthome{
+.container-phome{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
     position: relative;
-
 }
-.cifrar-function {
+h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 4.5rem;
+    text-align: center;
     display: flex;
     justify-content: center;
-    text-align: center;
-    margin: 1em;
+    margin-top: 9rem; 
 }
-
-.cifrar-box1, .cifrar-box2 {
-    width: 8em;
-    height: 8em;
-}
-
-.cifrar-box2{
-    border: #FFF;
-}
-
-.descifrar-box1, .descifrar-box2 {
+.inputBox {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    width: 8em;
-    height: 8em;
 }
-
-.clave-cipher {
-    width: 2.5em;
-    height: 2em;
+.inputBox input{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 2rem;
+    border-bottom: 2px solid #aceff3;
+    outline: none;
+    background: transparent;
+    width: 5vw;
+    height: 2.25rem;
+    border-radius: 8px;
+ }
+.inputBox textarea{
+    font-size: 1.75rem;
+    color: white;
+    margin-top: 2rem;
+    border-bottom: 2px solid #aceff3;
+    outline: none;
+    background: transparent;
+    width: 25vw;
+    height: 25vh;
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-y: scroll;
+    margin-inline-end: 2rem;
 }
-
-.container-clave {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 1.5em;
-    padding: 1em;
-    background-color: green; 
-}
-.container_cifrado{
+.key-box {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: baseline;
 }
-
-.cipher-p {
+.home-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.logs:hover{
+    background-color: rgba(52, 199, 209, 0.411);
+    transition: ease 0.3s;
+}
+.logs h4 {
     padding: 1em;
-    background-color: grey;
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
-
-video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top:0;
-    z-index: -1;
-  }
-
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     min-height: 8rem;
-  }
-
+}
 /*saca las viñetas de la lista*/
 .nav-links li{
     list-style: none;  
 }  
-
 .nav-links ul {
     display: flex;
     margin: 0;
     padding: 0; 
 }
-
 .nav-links {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    width: 30%;  
-    
+    width: 30%;     
 }
-
 /*saca el subrayado de los links*/
 .nav-links a {
     text-decoration: none;
@@ -176,26 +155,72 @@ nav {
     background-color: rgba(52, 199, 209, 0.411);
     transition: ease 0.3s;
 }
-
-.logs:hover{
-    background-color: rgba(52, 199, 209, 0.411);
-    transition: ease 0.3s;
-}
-
-.logs h4 {
-    padding: 1em;
-    display: block;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
 p {
-    display: flex;
-    justify-content: center;
     text-align: center;
     font-size: 1.75rem;
     max-width: 60%;
     margin-top: 4rem;
-  
-   
 }
+::placeholder{
+    color:#9EEAEE;
+}
+textarea {
+    resize: none;
+  }
+.toggle-btn{
+    position: absolute;
+    top: 3rem;
+    right: 1rem; 
+    display:none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+ }
+ .toggle-btn .bar{
+     width: 100%;
+     height: 5px;
+     background-color:#9EEAEE;
+     border-radius: 2px;
+ }
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    z-index: -1;
+}
+@media (max-width: 900px){
+    .toggle-btn {
+        display: flex;
+    }
+
+    .nav-links{
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-tab {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .nav-links ul {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+}   
