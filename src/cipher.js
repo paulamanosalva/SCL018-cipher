@@ -1,14 +1,10 @@
 const cipher = {
-  encode: function() {
+  encode: function(offset, textEncode) {
     let cipherText = "";
-    let text = document.getElementById("cipher-input").value;
-    let offset = parseInt(document.getElementById("cipher-offset").value);
-    
-    for(let i=0 ; i < text.length; i++){
-      let asciiNum = text[i].charCodeAt();
+    for(let i=0 ; i < textEncode.length; i++){
+      let asciiNum = textEncode[i].charCodeAt();
       if (asciiNum >= 65 && asciiNum <= 90 ){
         cipherText += String.fromCharCode((asciiNum - 65 + offset)%26 + 65);
-        
       }
       else if (asciiNum >= 97 && asciiNum <= 122){
         cipherText += String.fromCharCode((asciiNum - 97 + offset)%26 + 97);
@@ -16,19 +12,14 @@ const cipher = {
       else{
         cipherText += String.fromCharCode(asciiNum);
       }
-    
-    document.getElementById("cipher-output").innerText=cipherText;
-    //return cipherText;
   }
-  
+  return cipherText;
 },
-  decode: function(){
+  decode: function(offset, textDecode){
     let n = 1;
     let decipherText = "";
-    let text = document.getElementById("decipher-input").value;
-    let offset = parseInt(document.getElementById("decipher-offset").value);
-    for(let i=0 ; i < text.length; i++){
-      let asciiNum = text[i].charCodeAt();
+    for(let i=0 ; i < textDecode.length; i++){
+      let asciiNum = textDecode[i].charCodeAt();
       if (asciiNum >= 65 && asciiNum <= 90 ){
         if(asciiNum - (offset %26) >=65){
           decipherText += String.fromCharCode(asciiNum - (offset % 26));
@@ -61,26 +52,7 @@ const cipher = {
         decipherText += String.fromCharCode(asciiNum);
       }
     }
-    document.getElementById("decipher-output").innerText=decipherText;
-    //return decipherText;
+    return decipherText;
   }
 }
-
-//export default cipher;
-//let encodeBtn = document.getElementById("cipher-encode-btn");
-//encodeBtn.addEventListener("click", cipher.encode());
-
-//let decodeBtn = document.getElementsByClassName("decipher-fn")[0];
-//decodeBtn.addEventListener("click", cipher.decode());
-
-document.addEventListener("click",(event)=>{
-  if(event.target.matches('#cipher-encode-btn')){
-    cipher.encode();
-  }
-  else if(event.target.matches(".decipher-fn")){
-    cipher.decode();
-  }
-  else {
-    return 0;
-  }
-});
+export default cipher;
