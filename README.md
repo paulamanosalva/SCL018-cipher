@@ -16,11 +16,11 @@ The page is designed as a cloud where you can have your account and keep your th
 
 The aesthetic was based on Harry Potter's movies saga, director Dumbledore possesses a magical artifact called the Pensieve that allows him to retrieve past memories.
 
-![Pensadero Harry Potter](img-readme/pensadero.jpg)
+![Pensadero Harry Potter](src/img-readme/pensadero.jpg)
 
 This is the **Figma** prototype:
 
-![Prototipo figma](img-readme/prototipo.png)
+![Prototipo figma](src/img-readme/prototipo.png)
 
 ## How it works ⚙️
 
@@ -81,11 +81,11 @@ La página está pensada como una nube donde puedes tener tu cuenta y guardar tu
 
 La estética se basó en la saga de películas de Harry Potter, donde el director Dumbledore posee un artefacto mágico llamado Pensadero que le permite recuperar memorias pasadas. 
 
-![Pensadero Harry Potter](img-readme/pensadero.jpg)
+![Pensadero Harry Potter](src/img-readme/pensadero.jpg)
 
 Esta es una foto del prototipo realizado en **Figma**:
 
-![Prototipo figma](img-readme/prototipo.png)
+![Prototipo figma](src/img-readme/prototipo.png)
 
 ## ¿Cómo funciona? ⚙️
 
