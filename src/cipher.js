@@ -1,5 +1,15 @@
 const cipher = {
   encode: function(offset, textEncode) {
+  try{
+    if (offset === null || offset === 0 ) {
+      throw new TypeError();
+    }
+  }
+  catch (TypeError){
+    throw new TypeError();
+  }
+    
+  
     let cipherText = "";
     for(let i=0 ; i < textEncode.length; i++){
       let asciiNum = textEncode[i].charCodeAt();
@@ -16,6 +26,15 @@ const cipher = {
   return cipherText;
 },
   decode: function(offset, textDecode){
+    try{
+      if (offset === null || offset === 0 ) {
+        throw new TypeError();
+      }
+    }
+    catch (TypeError){
+      throw new TypeError();
+    }
+      
     let n = 1;
     let decipherText = "";
     for(let i=0 ; i < textDecode.length; i++){
