@@ -59,9 +59,9 @@ Use npm start to display the page on a local server and npm test to test the enc
 
 **Paula Manosalva**
 
-- [Perfil](https://github.com/paulamanosalva "Paula Manosalva")
+- [Profile](https://github.com/paulamanosalva "Paula Manosalva")
 - [Email](mailto:pau.emd@gmail.com?subject=Hi "Hi!")
-- [Website (en construcción)](https://paulamanosalva.github.io "Website en construcción")
+- [Website (en construcción)](https://paulamanosalva.github.io "Website (on development)")
 
 ## 🤝 Support
 
