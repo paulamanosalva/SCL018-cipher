@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Cifrado César del Pensadero Privado.">
+  <title>Decipher</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--Barra navegación-->
+  
+    <nav class="nav-tab">
+      <div class="logs">
+        <h4>Log in / Sign up</h4>
+      </div>
+      <ul class="nav-links">
+        <li><a target="_blank" href="https://es.wikipedia.org/wiki/Cifrado_César">Saber más</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cipher.html">Cifrar</a></li>
+        <li><a href="#">Nube de pensamientos</a></li>
+      </ul>
+    </nav> 
+      <section>
+        <header>
+          <h1>Pensadero Privado</h1>
+        </header>
+
+        <div class="cipher-p">
+          <p>Escribe la misma clave con la que cifraste tu pensamiento, luego inserta el texto y dale click al botón para descifrar.</p>
+        </div>
+        
+
+        <div class="box-container">
+         
+            <div class=" inputBox">
+              <div class="key-box">
+                <input type="text" name="" required="" id="decipher-offset" placeholder="Clave">
+                  <button  class="decipher-fn" aria-label="Haz click en este botón para descifrar un texto">
+                Descifrar
+                  </button>
+                </div>
+              <div class="textarea-box">
+                <textarea id="decipher-input" placeholder="Escribe tu texto aquí"></textarea> 
+                <textarea id="decipher-output" placeholder="Aquí saldrá tu texto descifrado" readonly></textarea>
+              </div> 
+                    
+            </div>
+        </div>
+      </section>
+    <video playsinline autoplay muted loop id="video-bg">
+      <source src="video-humo.mp4" type="video/mp4">
+    </video>
+  </body>
+  <script src="index.js" type="module"></script>
+
+</html>
