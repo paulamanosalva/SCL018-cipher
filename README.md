@@ -41,8 +41,6 @@ asciiNum + Math.abs((n*26 - offset))%26
 
 ## Availible commands 📘
 
-En el proyecto puedes correr:
-
 ### `npm start : npm test`,
 
 Use npm start to display the page on a local server and npm test to test the encryption and decryption tests included in the project (these came by default and it was a requirement to pass them to progress to my next project in the bootcamp) 
