@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pensadero Privado, cifrado César.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pensadero Privado</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    
+    <!-- HOME-->
+    <main>
+      <nav class="nav-tab">
+        <div class="logs">
+          <h4>Log in / Sign up</h4>
+        </div>
+        <a href="#" class="toggle-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <ul class="nav-links">
+          <li><a target="_blank" href="https://es.wikipedia.org/wiki/Cifrado_César">Saber más</a></li>
+          <li><a href="cipher.html">Cifrar</a></li>
+          <li><a href="decipher.html">Descifrar</a></li>
+          <li><a href="#">Nube de pensamientos</a></li>
+        </ul>
+      </nav>  
+      <header>
+        <div class="container-title">
+          <h1>Pensadero Privado</h1>
+        </div>
+        
+      </header>
+
+      <section> 
+        <div class="container-phome">
+        <p>Bienvenido a tu pensadero personal, aquí podrás escribir sin miedo a ser  juzgado, 
+          nuestra página de cifrado te permite guardar tus pensamientos encriptados en la nube y luego puedes recordarlos
+          en la página de descifrado. Recuerda siempre tener a mano la clave de tu pensamiento. <br>
+        ¿Qué quieres hacer?</p>
+          </div>
+      </section>
+      
+      <nav class="home-buttons">
+        <button onclick="location.href='cipher.html'" class="cifrar" aria-label="Haz click en este botón para ir a cifrar un texto" >
+            Cifrar
+        </button>
+        <button onclick="location.href='decipher.html'" class="descifrar" aria-label="Haz click en este botón para ir a descifrar un texto">
+            Descifrar
+        </button>
+      </nav>
+       
+    </main>
+
+
+    <video playsinline autoplay muted loop id="video-bg">
+      <source src="video-humo.mp4" type="video/mp4">
+    </video>
+   
+    
+  </body>
+  <script src="index.js" type="module"></script>
+</html>
