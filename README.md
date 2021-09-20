@@ -36,7 +36,7 @@ asciiNum + Math.abs((n*26 - offset))%26
 
 ## Github pages link 📌
 
-- [Pensadero privado en github pages](https://paulamanosalva.github.io/SCL018-cipher/ "proyecto desplegado")
+- [Pensadero privado en github pages](https://paulamanosalva.github.io/SCL018-cipher/src "proyecto desplegado")
 
 
 ## Availible commands 📘
@@ -99,7 +99,7 @@ asciiNum + Math.abs((n*26 - offset))%26
 
 ## Link a página desplegada 📌
 
-- [Pensadero privado en github pages](https://paulamanosalva.github.io/SCL018-cipher/ "proyecto desplegado")
+- [Pensadero privado en github pages](https://paulamanosalva.github.io/SCL018-cipher/src "proyecto desplegado")
 
 
 ## Comandos disponibles 📘
